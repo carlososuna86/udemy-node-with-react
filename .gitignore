@@ -359,3 +359,5 @@ gradle-app.setting
 # Temporary folders
 
 # End of https://www.gitignore.io/api/node,reactnative
+
+keys.js
