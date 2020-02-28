@@ -13,6 +13,7 @@ passport.use(
       console.log("Access token: " + accessToken);
       console.log("Refresh token: " + refreshToken);
       console.log("Profile: " + JSON.stringify(profile));
+      console.log("profile.id: " + profile.id);
     }
   )
 );
