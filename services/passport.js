@@ -18,8 +18,15 @@ passport.use(
           if (existingUser) {
             // we already have a record
             // for this Profile ID      
+            done(null, existingUser);
           } else {
-            new User({ googleID: profile.id }).save()
+            // We need to create a new User record
+            new User({ googleID: profile.id })
+              .save()
+              .then(user => {
+                // If the record was saved, notify passport that it's done
+                done(null, user);
+              });
           }
         });
     }
