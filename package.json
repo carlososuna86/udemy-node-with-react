@@ -16,6 +16,7 @@
   "repository": "https://github.com/carlososuna86/udemy-node-with-react.git",
   "license": "ISC",
   "dependencies": {
+    "cookie-session": "^1.4.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.13",
     "nodemon": "^2.0.2",
